@@ -6,7 +6,7 @@ class Pruebas extends CI_Controller {
     function __construct() {
         parent::__construct();
 
-        // Cargo los helpes que vaya a usar (CodeIgniter los busca en \application\helpers y en \system\helpers)
+        // Cargo los helpers que vaya a usar (CodeIgniter los busca en \application\helpers y en \system\helpers)
         $this->load->helper("nuevoHelper_helper");  // Ruta del helper: \application\helpers\nuevoHelper_helper.php
     }
 
