@@ -9,5 +9,5 @@
     */
 function nuevaFuncionEnNuevoHelper()
 {
-    return "<h1>Estás viendo el return de nuevaFuncionEnNuevoHelper().</h1>";
+    return "<p>Estás viendo el return de nuevaFuncionEnNuevoHelper(), en la ruta \application\helpers\nuevoHelper_helper.php.</p>";
 }
