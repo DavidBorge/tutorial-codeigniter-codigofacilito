@@ -5,7 +5,9 @@ class NuevoControlador extends CI_Controller {
 
     public function index()
     {
-        $this->load->view('nuevoControlador/nuevoControladorView');  // Ruta de la vista: \application\views\nuevoControlador\nuevoControladorView.php
+        $datos['bodyContent'] = 'nuevoControlador/nuevoControladorView';  // Ruta de la vista: \application\views\nuevoControlador\nuevoControladorView.php
+		
+		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
     }
 
 }
