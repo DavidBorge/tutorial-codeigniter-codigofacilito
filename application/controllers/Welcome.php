@@ -20,7 +20,7 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
-	    $dato['string'] = "Hola Mundo!";
+	    $dato['mensajeHolaMundo'] = "Hola Mundo!";
 		$this->load->view('welcome_message', $dato);
 	}
 }
