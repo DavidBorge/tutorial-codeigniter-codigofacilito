@@ -21,6 +21,6 @@ class Welcome extends CI_Controller {
 	public function index()
 	{
 	    $dato['mensajeHolaMundo'] = 'Hola Mundo!';
-		$this->load->view('welcome_message', $dato);
+		$this->load->view('welcome_message', $dato);  // Ruta de la vista: \application\views\welcome_message.php
 	}
 }
