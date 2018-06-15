@@ -4,7 +4,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>Tutortial de CodeIgniter</title>
+    <title>NuevoControlador</title>
 
     <style type="text/css">
 
@@ -13,7 +13,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 <body>
 
 <div id="container">
-    <h1><?= $string ?></h1>
+    <h1>Estás viendo: \application\views\nuevoControlador\nuevoControladorView.php</h1>
 </div>
 
 </body>
