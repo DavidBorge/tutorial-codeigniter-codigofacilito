@@ -20,4 +20,14 @@ class Tabla1Model extends CI_Model {
         return $resultado;
     }
 
+    public function getRegistros() {
+        /* SELECT con CodeIgniter:
+                $this->db->get('tabla');
+        */
+
+        $resultado = $this->db->get('tabla1');
+
+        return $resultado;
+    }
+
 }

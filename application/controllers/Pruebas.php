@@ -29,6 +29,10 @@ class Pruebas extends CI_Controller {
     {
         // Contenido principal de la vista (body)
         $datos['bodyContent'] = 'pruebas/pruebasView';  // Ruta de la vista: \application\views\pruebas\pruebasView.php
+        
+        // Base de Datos: leer datos (Tutorial 12)
+        // Cargo el método getRegistros() de Tabla1Model.php
+        $datos['getRegistrosMetodo'] = $this->Tabla1Model->getRegistros();  // Lo llamo en la vista como $getRegistrosMetodo->result(), que devuelve un array con los registros
 
 		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
     }

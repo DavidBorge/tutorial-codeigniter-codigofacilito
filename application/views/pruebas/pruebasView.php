@@ -1,5 +1,5 @@
-<h1>Pruebas</h1>
-<hr>
+<h1>Pruebas con CodeIgniter</h1>
+<hr><hr>
 
 
 <!-- --------------------------------------------------------------------------- -->
@@ -84,3 +84,18 @@
 
 <!-- Cierro el formulario -->
 <?= form_close(); ?>
+
+
+
+<!-- --------------------------------------------------------------------------- -->
+<hr><h2>Base de Datos: leer datos (Tutorial 12)</h2>
+
+<!-- Comprobaciones -->
+<?php //var_dump($getRegistrosMetodo); ?>
+<?php //var_dump($getRegistrosMetodo->result()); ?>
+
+<?php
+    foreach ($getRegistrosMetodo->result() as $registro) {
+        echo $registro->columna1.'<br>';
+    }
+?>
