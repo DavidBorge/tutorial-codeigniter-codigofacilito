@@ -20,8 +20,10 @@ class Welcome extends CI_Controller {
 	 */
 	public function index()
 	{
+		// Contenido principal de la vista (body)
 		$datos['bodyContent'] = 'welcome/welcomeView';  // Ruta de la vista: \application\views\welcome\welcomeView.php
 
+		// Otros datos que le pasamos a la vista
 		$datos['mensajeHolaMundo'] = 'Hola Mundo!';
 		
 		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php

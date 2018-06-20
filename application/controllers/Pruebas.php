@@ -27,6 +27,7 @@ class Pruebas extends CI_Controller {
 
     public function index()
     {
+        // Contenido principal de la vista (body)
         $datos['bodyContent'] = 'pruebas/pruebasView';  // Ruta de la vista: \application\views\pruebas\pruebasView.php
 
 		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
