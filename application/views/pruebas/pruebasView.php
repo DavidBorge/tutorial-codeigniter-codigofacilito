@@ -21,13 +21,7 @@
 
 
 <!-- --------------------------------------------------------------------------- -->
-<hr><h2>Conexión a Base de Datos (Tutorial 9)</h2>
-
-
-
-
-<!-- --------------------------------------------------------------------------- -->
-<hr><h2>Formularios con Form Helper (Tutorial 10)</h2>
+<hr><h2>Formularios con Form Helper (Tutoriales 10 y 11)</h2>
 <!-- Abro el formulario (<form action="controlador/método">) -->
 <?= form_open("Pruebas/miFormularioAction"); ?>
 
@@ -54,7 +48,6 @@
                                'maxlength'   => '20',
                                'value'       => '');
 ?>
-
 <?= form_label('Campo 3: ', 'campo3Form'); ?>
 <?= form_input($campo3Propiedades); ?>
 <br><br>
