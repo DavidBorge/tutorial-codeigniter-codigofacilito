@@ -22,6 +22,7 @@
 
 <!-- --------------------------------------------------------------------------- -->
 <hr><h2>Formularios con Form Helper (Tutoriales 10 y 11)</h2>
+
 <!-- Abro el formulario (<form action="controlador/método">) -->
 <?= form_open("Pruebas/miFormularioAction"); ?>
 
@@ -50,6 +51,32 @@
 ?>
 <?= form_label('Campo 3: ', 'campo3Form'); ?>
 <?= form_input($campo3Propiedades); ?>
+<br><br>
+
+<!-- Botón de Submit -->
+<?= form_submit('botonSubmit', 'Enviar'); ?>
+
+<!-- Cierro el formulario -->
+<?= form_close(); ?>
+
+
+
+<!-- --------------------------------------------------------------------------- -->
+<hr><h2>Base de Datos: conexión, modelo, insert (Tutoriales 9 y 11)</h2>
+
+<!-- Abro el formulario (<form action="controlador/método">) -->
+<?= form_open("Pruebas/formularioQueGuardaEnBaseDeDatosAction"); ?>
+
+<!-- Otro campo, con las propiedades definidas en un array y label creado con el método de CodeIgniter -->
+<?php
+    $campo1Propiedades = array('name'        => 'campo1Form',
+                               'placeholder' => 'Rellena el Campo 1...',
+                               'type'        => 'text',
+                               'maxlength'   => '255',
+                               'required'    => 'required');
+?>
+<?= form_label('Campo 1 (obligatorio): ', 'campo1Form'); ?>
+<?= form_input($campo1Propiedades); ?>
 <br><br>
 
 <!-- Botón de Submit -->
