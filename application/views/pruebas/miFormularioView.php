@@ -1,6 +1,6 @@
 <div id="container">
     <h1>miFormularioView</h1>
-    <h4>Estás viendo: \application\views\pruebas\miFormularioView.php</h4>
+    <p>Estás viendo: \application\views\pruebas\miFormularioView.php</p>
 
     <hr>
 
