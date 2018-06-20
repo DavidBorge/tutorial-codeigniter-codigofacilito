@@ -9,21 +9,20 @@ class Pruebas extends CI_Controller {
         // Cargo los helpers que vaya a usar (CodeIgniter los busca en \application\helpers y en \system\helpers)
         $this->load->helper('nuevoHelper_helper');  // Ruta del helper: \application\helpers\nuevoHelper_helper.php
 
+        // Cargo las librerías que vaya a usar (CodeIgniter las busca en \application\libraries y en \system\libraries)
+        $this->load->library('NuevaLibreria');  // Ruta de la librería: \application\libraries\NuevaLibreria.php
     }
 
     public function index()
     {
         $datos['bodyContent'] = 'pruebas/pruebasView';  // Ruta de la vista: \application\views\pruebas\pruebasView.php
         
-        // Cargo las librerías que vaya a usar (CodeIgniter las busca en \application\libraries y en \system\libraries)
-        $this->load->library('NuevaLibreria', array('a', 'b'));  // Ruta de la librería: \application\libraries\NuevaLibreria.php
-        // Nota: los parámetros que acompañen al nombre de la librería los recibirá el constructor de esa librería
-
-        var_dump($this->nuevaLibreria);
-
-        // Cuidado: hay que pasarle los métodos a la vista (preferiblemente, usando la variable $datos en index()).
-        $datos['crearListaULFuncion'] = $this->nuevaLibreria->crearListaUL();
-
+        /* Formas de usar una NuevaLibreria 
+            1. (Recomendado) En la vista, llamar de la forma siguiente a sus métodos (pasando parámetros si hace falta):
+                NuevaLibreria::crearListaUL(array('Elemento 1', 'Elemento 2'));
+            2. Creando una variable por cada método que pasamos a la vista (preferiblemente, usando la variable $datos en index()):
+                $datos['crearListaULFuncion'] = NuevaLibreria::crearListaUL(array('Elemento 1', 'Elemento 2'));  // Nota: el array es un parámetro del método crearListaUL() de la librería NuevaLibreria.
+        */
 		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
     }
 

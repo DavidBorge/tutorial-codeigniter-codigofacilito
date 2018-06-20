@@ -5,4 +5,4 @@
 <?= nuevaFuncionEnNuevoHelper(); ?>
 
 <hr><h2>Librerías (Tutorial 8)</h2>
-<?= $crearListaULFuncion; ?>
+<?= NuevaLibreria::crearListaUL(array('Elemento 1', 'Elemento 2')); ?>
