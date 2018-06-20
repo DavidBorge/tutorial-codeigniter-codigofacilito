@@ -28,8 +28,8 @@
 
 <!-- --------------------------------------------------------------------------- -->
 <hr><h2>Formularios con Form Helper (Tutorial 10)</h2>
-<!-- Abro el formulario (<form action="elParámetrodeform_open">) -->
-<?= form_open("formularios/miformulario"); ?>
+<!-- Abro el formulario (<form action="controlador/método">) -->
+<?= form_open("Pruebas/miFormularioAction"); ?>
 
 <!-- Un campo -->
 <label>

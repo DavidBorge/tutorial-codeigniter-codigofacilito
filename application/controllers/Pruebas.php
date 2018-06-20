@@ -27,4 +27,10 @@ class Pruebas extends CI_Controller {
 		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
     }
 
+    public function miFormularioAction() {
+        $datos['bodyContent'] = 'pruebas/miFormularioView';  // Ruta de la vista: \application\views\nuevoControlador\nuevoControladorView.php
+		
+		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
+    }
+
 }
