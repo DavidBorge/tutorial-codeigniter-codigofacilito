@@ -27,8 +27,10 @@ class Pruebas extends CI_Controller {
 		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
     }
 
+
+    // Formularios con Form Helper (Tutoriales 10 y 11)
     public function miFormularioAction() {
-        $datos['bodyContent'] = 'pruebas/miFormularioView';  // Ruta de la vista: \application\views\nuevoControlador\nuevoControladorView.php
+        $datos['bodyContent'] = 'pruebas/miFormularioView';  // Ruta de la vista: \application\views\pruebas\miFormularioView.php
 		
 		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
     }
