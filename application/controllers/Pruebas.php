@@ -33,6 +33,10 @@ class Pruebas extends CI_Controller {
         // Base de Datos: leer datos (Tutorial 12)
         // Cargo el método getRegistros() de Tabla1Model.php
         $datos['getRegistrosMetodo'] = $this->Tabla1Model->getRegistros();  // Lo llamo en la vista como $getRegistrosMetodo->result(), que devuelve un array con los registros
+        
+        // Base de Datos: leer un dato por id (Tutorial 13)
+        // Cargo el método getRegistroByID() de Tabla1Model.php
+        $datos['getRegistroByIDMetodo'] = $this->Tabla1Model->getRegistroByID("1");  // Lo llamo en la vista como $getRegistrosMetodo->result(), que devuelve un array con los registros
 
 		$this->load->view('baseView', $datos);  // Ruta de la vista: \application\views\baseView.php
     }

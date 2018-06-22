@@ -30,4 +30,15 @@ class Tabla1Model extends CI_Model {
         return $resultado;
     }
 
+    public function getRegistroByID($id) {
+        /* SELECT con CodeIgniter:
+                $this->db->get('tabla');
+        */
+
+        $this->db->get('tabla1');
+        $resultado = $this->db->where('id', $id);
+
+        return $resultado;
+    }
+
 }
